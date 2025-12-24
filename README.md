@@ -28,7 +28,7 @@ Proyek ini dibangun dengan mindset **"AI-First Development"**, di mana fokus uta
 
 ## 🔗 Live Demo
 Lihat hasil akhirnya di sini:  
-👉 **[alinktech.my.id](https://alinktech.my.id)**
+👉 **[alindra.alinktech.my.id](https://alindra.alinktech.my.id)**
 
 ---
 
@@ -38,4 +38,4 @@ Tertarik untuk membuat landing page serupa atau ingin mengintegrasikan workflow 
 [**Chat on WhatsApp**](https://wa.me/6281393657195)
 
 ---
-*Developed by [Alindra](https://alinktech.my.id) - Architecting Solutions & Automating Growth.*
+*Developed by [Alindra](https://alindra.alinktech.my.id) - Architecting Solutions & Automating Growth.*

@@ -12,107 +12,199 @@
         }
         .bento-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+        }
+        .image-overlay {
+             background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 100%);
+        }
+        .code-bg {
+            background-image: radial-gradient(#3b82f6 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.1;
         }
     </style>
 </head>
 <body class="bg-[#0a0a0a] text-gray-100 font-sans">
 
     <nav class="fixed w-full z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/10">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold tracking-tighter text-white">Alindra<span class="text-blue-500">.</span></a>
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400 uppercase tracking-widest">
-                <a href="#solutions" class="hover:text-white transition">Solutions</a>
+        <div class="max-w-6xl mx-auto px-6 py-4 grid grid-cols-3 items-center">
+            <div class="flex justify-start">
+                <a href="#" class="text-2xl font-bold tracking-tighter text-white">Alindra<span class="text-blue-500">.</span></a>
+            </div>
+            <div class="hidden md:flex justify-center space-x-8 text-sm font-medium text-gray-400 uppercase tracking-widest">
+                <a href="#vibecode" class="hover:text-white transition">Home</a>
+                <a href="#solutions" class="hover:text-white transition">Business</a>
                 <a href="#automation" class="hover:text-white transition">Automation</a>
-                <a href="#network" class="hover:text-white transition">Network</a>
-                <a href="https://drive.google.com/file/d/1ukiC6q25iPuNhzI6cyGRKx-TGxnBEiBN/view?usp=sharing" class="bg-white text-black px-4 py-2 rounded-full hover:bg-blue-500 hover:text-white transition">Get CV</a>
+                <a href="#network" class="hover:text-white transition">Infrastructure</a>
+            </div>
+            <div class="flex justify-end">
+                <a href="https://drive.google.com/file/d/1ukiC6q25iPuNhzI6cyGRKx-TGxnBEiBN/view?usp=sharing" target="_blank" class="bg-white text-black px-5 py-2 rounded-full font-bold hover:bg-blue-500 hover:text-white transition text-xs uppercase tracking-tighter">Get CV</a>
             </div>
         </div>
     </nav>
 
-    <section class="relative pt-32 pb-20 px-6 overflow-hidden">
+    <section class="relative pt-40 pb-20 px-6 overflow-hidden">
         <div class="max-w-4xl mx-auto text-center relative z-10">
             <span class="inline-block py-1 px-3 rounded-full bg-blue-500/10 text-blue-400 text-xs font-bold tracking-widest uppercase mb-6 border border-blue-500/20">Available for Freelance</span>
             <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight tracking-tight">
-                Architecting Solutions. <br><span class="text-gray-500">Automating Growth.</span>
+                Architecting Solutions. <br><span class="text-gray-500 text-4xl md:text-6xl">Automating Growth.</span>
             </h1>
             <p class="text-lg md:text-xl text-gray-400 mb-10 leading-relaxed max-w-2xl mx-auto">
                 Saya membantu bisnis menjembatani kebutuhan kompleks dengan arsitektur teknologi yang efisien, otomatisasi n8n, dan desain infrastruktur yang tangguh.
             </p>
             <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="#solutions" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold transition flex items-center justify-center">
+                <a href="#vibecode" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold transition flex items-center justify-center">
                     Explore My Work <i class="fa-solid fa-arrow-right ml-2"></i>
                 </a>
-                <a href="https://alinktech.my.id" target="_blank" class="border border-white/20 hover:bg-white/5 text-white px-8 py-4 rounded-xl font-bold transition">
-                    Main Website
+                <a href="https://wa.me/6281393657195" target="_blank" class="border border-green-500/50 text-green-400 hover:bg-green-500/10 px-8 py-4 rounded-xl font-bold transition flex items-center justify-center gap-3">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Chat on WhatsApp
                 </a>
             </div>
         </div>
-    </nav>
+    </section>
 
-    <main class="max-w-6xl mx-auto px-6 py-20">
+    <main class="max-w-6xl mx-auto px-6 py-10">
+
+        <div id="vibecode" class="mb-24">
+             <h2 class="text-2xl font-bold mb-10 flex items-center justify-end text-right">
+                Vibe Code & Frontend Craft <span class="w-8 h-[2px] bg-blue-500 ml-4"></span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <div class="md:col-span-4 bg-[#0f0f0f] border border-white/10 rounded-3xl p-8 bento-card flex flex-col justify-center items-start order-2 md:order-1">
+                     <h3 class="text-xl font-bold text-white mb-4">Why My Frontend Works?</h3>
+                     <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                         Saya tidak hanya menulis kode, tapi membangun pengalaman. Fokus pada kecepatan, aksesibilitas, dan konversi. Cocok untuk kebutuhan Landing Page bisnis maupun Personal Branding.
+                     </p>
+                     <div class="grid grid-cols-3 gap-4 w-full text-center">
+                         <div class="bg-black/40 p-3 rounded-xl border border-white/5">
+                             <i class="fa-brands fa-html5 text-2xl text-orange-500 mb-1"></i>
+                             <p class="text-xs text-gray-500 font-bold">HTML5</p>
+                         </div>
+                         <div class="bg-black/40 p-3 rounded-xl border border-white/5">
+                             <i class="fa-brands fa-css3-alt text-2xl text-blue-500 mb-1"></i>
+                             <p class="text-xs text-gray-500 font-bold">Tailwind</p>
+                         </div>
+                         <div class="bg-black/40 p-3 rounded-xl border border-white/5">
+                             <i class="fa-brands fa-js text-2xl text-yellow-400 mb-1"></i>
+                             <p class="text-xs text-gray-500 font-bold">JS</p>
+                         </div>
+                     </div>
+                </div>
+
+                <div class="md:col-span-8 bg-[#111] border border-white/10 rounded-3xl p-8 bento-card relative overflow-hidden group order-1 md:order-2">
+                    <div class="absolute inset-0 code-bg"></div>
+                    <div class="relative z-10">
+                        <i class="fa-solid fa-code text-4xl text-blue-500 mb-6"></i>
+                        <h3 class="text-3xl font-bold text-white mb-2">Landing Page Portfolio</h3>
+                        <p class="text-gray-400 mb-8 max-w-sm">Kumpulan hasil eksplorasi frontend, slicing design, dan interaktif web yang modern dan responsif.</p>
+                        
+                        <div class="flex flex-col gap-3">
+                            <div class="flex items-center text-sm text-gray-300 bg-white/5 p-3 rounded-lg border border-white/5">
+                                <span class="text-blue-400 font-mono mr-3">&lt;/&gt;</span> Clean & Semantic Code
+                            </div>
+                            <div class="flex items-center text-sm text-gray-300 bg-white/5 p-3 rounded-lg border border-white/5">
+                                <span class="text-purple-400 font-mono mr-3">{}</span> Modern Tech Stack
+                            </div>
+                        </div>
+
+                        <a href="https://alinktech.my.id" target="_blank" class="mt-8 inline-flex items-center justify-center w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl font-bold transition group-hover:scale-[1.02]">
+                            Visit Work Sample <i class="fa-solid fa-external-link ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-        <div id="solutions" class="mb-20">
+        <div id="solutions" class="mb-24">
             <h2 class="text-2xl font-bold mb-10 flex items-center">
                 <span class="w-8 h-[2px] bg-blue-500 mr-4"></span> Business Transformation
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-                <div class="md:col-span-8 bg-[#111] border border-white/10 rounded-3xl p-8 bento-card">
-                    <div class="flex justify-between items-start mb-6">
-                        <div>
-                            <h3 class="text-3xl font-bold text-white mb-2">Semata Tailor</h3>
-                            <p class="text-gray-400 max-w-md">Modernisasi bisnis UMKM konvensional dengan sistem pelacakan pesanan real-time</p>
+                <div class="md:col-span-8 bg-[#111] border border-white/10 rounded-3xl overflow-hidden bento-card relative group">
+                    <div class="relative h-[400px] md:h-[450px]">
+                        <div class="absolute top-0 left-0 w-full p-8 z-20 image-overlay flex flex-col justify-between h-full pointer-events-none">
+                             <div class="flex justify-between items-start pointer-events-auto">
+                                <div>
+                                    <h3 class="text-3xl font-bold text-white mb-2 drop-shadow-lg">Semata Tailor</h3>
+                                    <p class="text-gray-200 max-w-md drop-shadow-md font-medium">Modernisasi bisnis UMKM konvensional dengan sistem pelacakan pesanan real-time.</p>
+                                </div>
+                                <div class="flex space-x-3 bg-black/30 p-2 rounded-full backdrop-blur-md border border-white/10">
+                                    <a href="https://drive.google.com/file/d/16Zr0KgPeicc5hJrLL0BC40BE_mENDJRe/view?usp=sharing" target="_blank" title="Download Deck" class="text-white hover:text-blue-400 transition"><i class="fa-solid fa-file-pdf text-2xl"></i></a>
+                                    <a href="https://sematatailor.alinktech.my.id" target="_blank" class="text-blue-500 hover:text-blue-300 transition"><i class="fa-solid fa-external-link text-2xl"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <a href="https://sematatailor.alinktech.my.id" target="_blank" class="text-blue-500 hover:text-blue-400"><i class="fa-solid fa-external-link text-2xl"></i></a>
+                        <img src="sematatailor-dashboard.png" alt="Semata Dashboard" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105">
                     </div>
-                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 p-8 bg-[#111] relative z-30 border-t border-white/10">
                         <div class="bg-white/5 p-4 rounded-2xl border border-white/5">
-                            <span class="text-xs text-gray-500 block mb-1 uppercase">Feature</span>
+                            <span class="text-xs text-blue-400 block mb-1 uppercase tracking-tighter font-bold">Feature</span>
                             <p class="text-sm font-bold">Real-time Tracking</p>
                         </div>
                         <div class="bg-white/5 p-4 rounded-2xl border border-white/5">
-                            <span class="text-xs text-gray-500 block mb-1 uppercase">Core</span>
+                            <span class="text-xs text-blue-400 block mb-1 uppercase tracking-tighter font-bold">Core</span>
                             <p class="text-sm font-bold">Deepseek AI Agent</p>
                         </div>
-                        <div class="bg-white/5 p-4 rounded-2xl border border-white/5">
-                            <span class="text-xs text-gray-500 block mb-1 uppercase">Impact</span>
+                        <div class="bg-white/5 p-4 rounded-2xl border border-white/5 hidden md:block">
+                            <span class="text-xs text-blue-400 block mb-1 uppercase tracking-tighter font-bold">Impact</span>
                             <p class="text-sm font-bold">Zero Paper Waste</p>
                         </div>
                     </div>
-                    <img src="sematatailor-dashboard.png" alt="Semata Dashboard" class="w-full rounded-xl border border-white/10 opacity-50">
                 </div>
                 
-                <div class="md:col-span-4 bg-gradient-to-br from-blue-900/20 to-blue-600/10 border border-blue-500/20 rounded-3xl p-8 flex flex-col justify-between">
+                <div class="md:col-span-4 bg-gradient-to-br from-blue-900/20 to-blue-600/10 border border-blue-500/20 rounded-3xl p-8 flex flex-col justify-between bento-card">
                     <div>
-                        <h3 class="text-xl font-bold text-white mb-4 italic">"I build what your business needs to scale."</h3>
-                        <p class="text-sm text-gray-400">Tersedia untuk jasa konsultasi solusi teknis, pembuatan MVP, dan optimasi alur kerja digital.</p>
+                        <h3 class="text-xl font-bold text-white mb-4 italic leading-tight">"I build what your business needs to scale."</h3>
+                        <div class="space-y-4 mt-6">
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-check text-blue-500 mt-1 mr-3"></i>
+                                <p class="text-sm text-gray-300"><b>Solution Pre-sales:</b> Perancangan proposal teknis dan BoM.</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-check text-blue-500 mt-1 mr-3"></i>
+                                <p class="text-sm text-gray-300"><b>MVP Development:</b> Membangun prototype aplikasi bisnis cepat.</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-check text-blue-500 mt-1 mr-3"></i>
+                                <p class="text-sm text-gray-300"><b>Workflow Design:</b> Optimasi proses bisnis via n8n.</p>
+                            </div>
+                        </div>
                     </div>
-                    <button class="w-full bg-white text-black py-3 rounded-xl font-bold mt-8">Hire Me</button>
+                    <a href="mailto:asetyaardana@gmail.com" class="w-full bg-white text-black py-4 rounded-xl font-bold mt-8 text-center hover:bg-blue-500 hover:text-white transition cursor-pointer">Email Me Now</a>
                 </div>
             </div>
         </div>
 
-        <div id="automation" class="mb-20">
+        <div id="automation" class="mb-24">
             <h2 class="text-2xl font-bold mb-10 flex items-center justify-end text-right">
                 The Automation Lab <span class="w-8 h-[2px] bg-blue-500 ml-4"></span>
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-                <div class="md:col-span-5 bg-[#111] border border-white/10 rounded-3xl p-8 bento-card">
-                    <h3 class="text-2xl font-bold text-white mb-4">AI-LIN: Personal Assistant</h3>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
-                        Sistem asisten modular berbasis Telegram yang mengorkestrasi berbagai spesialis AI (ASAMI, YUKO, dll) untuk manajemen hidup tanpa gesekan.
-                    </p>
-                    <div class="space-y-3">
-                        <div class="flex items-center text-sm text-gray-300"><i class="fa-solid fa-check-circle text-blue-500 mr-2"></i> Voice-to-Structured Data.</div>
-                        <div class="flex items-center text-sm text-gray-300"><i class="fa-solid fa-check-circle text-blue-500 mr-2"></i> Multi-LLM Routing.</div>
-                        <div class="flex items-center text-sm text-gray-300"><i class="fa-solid fa-check-circle text-blue-500 mr-2"></i> Auto-Sync to Notion/Sheet</div>
+                <div class="md:col-span-5 bg-[#111] border border-white/10 rounded-3xl p-8 bento-card flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-6">
+                            <h3 class="text-2xl font-bold text-white">AI-LIN Assistant</h3>
+                            <a href="https://drive.google.com/file/d/1LylYHmkAVXuzYFIKaiV3_cR1HIdEecjd/view?usp=sharing" target="_blank" title="Download AI-LIN Deck" class="text-blue-500 hover:text-white transition"><i class="fa-solid fa-file-pdf text-2xl"></i></a>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                            Asisten modular berbasis Telegram yang mengorkestrasi spesialis AI (ASAMI, YUKO, REIKO) untuk manajemen hidup tanpa gesekan.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-sm text-gray-300"><i class="fa-solid fa-bolt text-blue-500 mr-3"></i> Voice-to-Structured Data</div>
+                            <div class="flex items-center text-sm text-gray-300"><i class="fa-solid fa-bolt text-blue-500 mr-3"></i> Multi-LLM Routing</div>
+                            <div class="flex items-center text-sm text-gray-300"><i class="fa-solid fa-bolt text-blue-500 mr-3"></i> Auto-Sync to Notion/Sheet</div>
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-white/5">
+                        <p class="text-xs text-gray-500 uppercase font-bold tracking-widest">Core Tech</p>
+                        <p class="text-sm font-mono mt-2 text-blue-400 text-xs">N8N + Telegram API + Google Sheet + Tavily + Deepseek</p>
                     </div>
                 </div>
-                <div class="md:col-span-7 bg-[#111] border border-white/10 rounded-3xl overflow-hidden bento-card relative">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10"></div>
-                    <img src="personalassistant-master.png" alt="n8n Workflow" class="w-full h-full object-cover p-4 opacity-70">
+                <div class="md:col-span-7 bg-[#111] border border-white/10 rounded-3xl overflow-hidden bento-card relative group">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10 pointer-events-none"></div>
+                    <img src="personalassistant-master.png" alt="n8n Workflow" class="w-full h-full object-cover p-4 transition-transform duration-700 group-hover:scale-105">
                     <div class="absolute bottom-6 left-6 z-20">
-                        <span class="px-3 py-1 bg-blue-600 rounded-full text-xs font-bold uppercase tracking-widest">Powered by n8n</span>
+                        <span class="px-3 py-1 bg-blue-600 rounded-full text-xs font-bold uppercase tracking-widest">n8n Orchestration Map</span>
                     </div>
                 </div>
             </div>
@@ -125,13 +217,13 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="bg-[#111] border border-white/10 rounded-3xl p-8 bento-card group">
                     <i class="fa-solid fa-wifi text-4xl text-blue-500 mb-6 group-hover:scale-110 transition"></i>
-                    <h3 class="text-xl font-bold mb-2">Wireless & Network Design</h3>
-                    <p class="text-gray-400 text-sm">Penyusunan High-Level Design (HLD), Heatmap survey, dan Bill of Materials (BoM) untuk kebutuhan jaringan skala menengah hingga enterprise.</p>
+                    <h3 class="text-xl font-bold mb-2 text-white">Wireless & Network Design</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Penyusunan High-Level Design (HLD), Heatmap survey, dan Bill of Materials (BoM) untuk kebutuhan jaringan skala menengah hingga enterprise.</p>
                 </div>
                 <div class="bg-[#111] border border-white/10 rounded-3xl p-8 bento-card group">
                     <i class="fa-solid fa-shield-halved text-4xl text-blue-500 mb-6 group-hover:scale-110 transition"></i>
-                    <h3 class="text-xl font-bold mb-2">Technical Sales Collateral</h3>
-                    <p class="text-gray-400 text-sm">Membantu mengemas solusi teknis menjadi paket yang mudah dipahami oleh pengambil keputusan bisnis.</p>
+                    <h3 class="text-xl font-bold mb-2 text-white">Technical Sales Collateral</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Membantu mengemas solusi teknis menjadi paket presentasi yang persuasif dan mudah dipahami oleh pengambil keputusan bisnis.</p>
                 </div>
             </div>
         </div>
@@ -139,12 +231,12 @@
     </main>
 
     <footer class="border-t border-white/10 py-12 px-6">
-        <div class="max-w-6xl mx-auto flex flex-col md:row justify-between items-center gap-6">
-            <p class="text-gray-500 text-sm">&copy; 2025 Alindra. Created with care for the freelance journey.</p>
-            <div class="flex space-x-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-gray-500 text-sm">&copy; 2025 Alindra. Solution Architect & Presales Specialist.</p>
+            <div class="flex space-x-8">
                 <a href="#" class="text-gray-400 hover:text-white transition"><i class="fa-brands fa-linkedin text-xl"></i></a>
                 <a href="#" class="text-gray-400 hover:text-white transition"><i class="fa-brands fa-github text-xl"></i></a>
-                <a href="#" class="text-gray-400 hover:text-white transition"><i class="fa-solid fa-envelope text-xl"></i></a>
+                <a href="mailto:emailmu@domain.com" class="text-gray-400 hover:text-white transition"><i class="fa-solid fa-envelope text-xl"></i></a>
             </div>
         </div>
     </footer>

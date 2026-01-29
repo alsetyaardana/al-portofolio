@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.alindra.my.id/sitemap.xml
+
+# Optimize for search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Allow all crawlers to access CSS and JS files
+Allow: *.css
+Allow: *.js
+Allow: *.pdf
+
+# Crawl-delay for general bots
+Crawl-delay: 1

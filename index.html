@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.svg">
+    
     <!-- SEO Meta Tags -->
-    <title>Alindra Setya Ardana | Presales Engineer & Solution Architect</title>
-    <meta name="description" content="Alindra Setya Ardana - Expert Presales Engineer & Solution Architect. Specializing in business transformation, automation solutions with n8n, and strategic infrastructure design.">
-    <meta name="keywords" content="Alindra, Alindra Setya Ardana, Presales Engineer, Solution Architect, Business Automation, n8n Workflow, Infrastructure Design, Frontend Developer">
+    <title>Alindra Setya Ardana | Presales Engineer</title>
+    <meta name="description" content="Alindra Setya Ardana - Expert Presales Engineer & IT Consultant in Jakarta, Indonesia. Specializing in business transformation, automation solutions with n8n, website development, system integration, AI assistant, and strategic infrastructure design. MVP development and digital transformation specialist.">
+    <meta name="keywords" content="Alindra, Alindra Setya Ardana, Presales Engineer, Technical Sales, Business Automation, n8n Workflow, Infrastructure Design, Frontend Developer, Website Development, System Integration, AI Assistant, Chatbot, Network Security, Wireless Design, MVP Development, Digital Transformation, IT Consultant, Solution Design, Jakarta, Indonesia">
     <meta name="author" content="Alindra Setya Ardana">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.alindra.my.id">
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Alindra Setya Ardana | Presales Engineer & Solution Architect">
-    <meta property="og:description" content="Expert Presales Engineer & Solution Architect specializing in business transformation, automation solutions, and strategic infrastructure design.">
+    <meta property="og:title" content="Alindra Setya Ardana | Presales Engineer">
+    <meta property="og:description" content="Expert Presales Engineer specializing in business transformation, automation solutions, and strategic infrastructure design.">
     <meta property="og:image" content="https://www.alindra.my.id/alindra-og-image.jpg">
     <meta property="og:url" content="https://www.alindra.my.id">
     <meta property="og:type" content="website">
@@ -22,24 +27,39 @@
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Alindra Setya Ardana | Presales Engineer & Solution Architect">
-    <meta name="twitter:description" content="Expert Presales Engineer & Solution Architect specializing in business transformation and automation solutions.">
+    <meta name="twitter:title" content="Alindra Setya Ardana | Presales Engineer">
+    <meta name="twitter:description" content="Expert Presales Engineer specializing in business transformation and automation solutions.">
     <meta name="twitter:image" content="https://www.alindra.my.id/alindra-og-image.jpg">
     
     <!-- Additional SEO Tags -->
     <meta name="language" content="id">
     <meta name="geo.region" content="ID">
     <meta name="geo.country" content="Indonesia">
-        <!-- Sitemap Reference -->
-    <link rel=\"sitemap\" type=\"application/xml\" href=\"/sitemap.xml\">
+    <meta name="geo.placename" content="Indonesia">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    <meta name="revisit-after" content="7 days">
+    <meta name="theme-color" content="#3b82f6">
+    
+    <!-- Performance and Security -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=yes">
+    
+    <!-- Sitemap and RSS -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://wa.me">
         <!-- Structured Data - JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Alindra Setya Ardana",
-      "jobTitle": "Presales Engineer & Solution Architect",
-      "description": "Expert Presales Engineer & Solution Architect specializing in business transformation, automation solutions with n8n, and strategic infrastructure design.",
+      "jobTitle": "Presales Engineer",
+      "description": "Expert Presales Engineer specializing in business transformation, automation solutions with n8n, and strategic infrastructure design.",
       "url": "https://www.alindra.my.id",
       "sameAs": [
         "https://notes.alindra.my.id",
@@ -47,13 +67,38 @@
       ],
       "knowsAbout": [
         "Presales Engineering",
-        "Solution Architecture",
+        "Technical Sales",
         "Business Automation",
-        "n8n Workflow",
+        "n8n Workflow Automation",
         "Infrastructure Design",
         "Frontend Development",
-        "Network Design"
+        "Website Development",
+        "Network Design",
+        "System Integration",
+        "MVP Development",
+        "AI Integration",
+        "Chatbot Development",
+        "Digital Transformation",
+        "IT Consulting",
+        "Solution Architecture"
       ],
+      "areaServed": {
+        "@type": "Country",
+        "name": "Indonesia"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "ID",
+        "addressRegion": "Jakarta"
+      },
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Presales Engineering Expertise"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Technical Education"
+      },
       "worksFor": {
         "@type": "Organization",
         "name": "Freelance"
@@ -107,37 +152,109 @@
         }
         
         .pdf-viewer {
-            width: 90%;
-            height: 90%;
+            width: 95%;
+            height: 95%;
             margin: 2.5% auto;
             background: white;
             border-radius: 12px;
             overflow: hidden;
             display: flex;
             flex-direction: column;
+            max-width: 1200px;
         }
         
         .pdf-toolbar {
             background: #1f2937;
             color: white;
-            padding: 12px 20px;
+            padding: 8px 12px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .pdf-toolbar h3 {
+            font-size: 14px;
+            margin: 0;
+        }
+        
+        .pdf-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .pdf-controls button {
+            padding: 6px 8px;
+            min-width: 32px;
+            font-size: 12px;
         }
         
         .pdf-canvas-container {
             flex: 1;
             overflow: auto;
-            padding: 20px;
+            padding: 10px;
             display: flex;
             justify-content: center;
             align-items: flex-start;
+            background: #f5f5f5;
         }
         
         #pdf-canvas {
             border: 1px solid #ddd;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .pdf-viewer {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                border-radius: 0;
+            }
+            
+            .pdf-toolbar {
+                padding: 8px;
+                font-size: 12px;
+            }
+            
+            .pdf-toolbar h3 {
+                font-size: 12px;
+                flex: 1;
+                min-width: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            
+            .pdf-controls {
+                gap: 4px;
+            }
+            
+            .pdf-controls button {
+                padding: 4px 6px;
+                min-width: 28px;
+                font-size: 10px;
+            }
+            
+            .pdf-canvas-container {
+                padding: 5px;
+            }
+            
+            #page-info {
+                font-size: 10px;
+                padding: 0 4px;
+            }
+            
+            #zoom-level {
+                font-size: 10px;
+                padding: 0 4px;
+            }
         }
     </style>
 </head>
@@ -156,12 +273,23 @@
                 <a href="#solutions" class="hover:text-white transition" title="Business Solutions by Alindra">Solutions</a>
                 <a href="#automation" class="hover:text-white transition" title="Automation Services">Automation</a>
                 <a href="#network" class="hover:text-white transition" title="Infrastructure Design">Infrastructure</a>
+                <a href="#services" class="hover:text-white transition" title="Alindra Services">Services</a>
                 <a href="https://notes.alindra.my.id" target="_blank" rel="noopener noreferrer" class="hover:text-white transition" title="Alindra's Technical Notes">Notes</a>
             </div>
             
-            <!-- CV Button -->
-            <div class="flex-shrink-0">
-                <button onclick="openPDF('cv-alindra.pdf', 'CV - Alindra')" class="bg-white text-black px-5 py-2 rounded-full font-bold hover:bg-blue-500 hover:text-white transition text-xs uppercase tracking-tighter">Get CV</button>
+            <!-- CV Dropdown -->
+            <div class="flex-shrink-0 relative group">
+                <button class="bg-white text-black px-5 py-2 rounded-full font-bold hover:bg-blue-500 hover:text-white transition text-xs uppercase tracking-tighter flex items-center gap-2">
+                    Get CV <i class="fa-solid fa-chevron-down text-xs"></i>
+                </button>
+                <div class="absolute top-full right-0 mt-2 bg-gray-900 border border-gray-700 rounded-xl py-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-xl z-50">
+                    <button onclick="openPDF('cv-alindra.pdf', 'CV - Alindra')" class="w-full px-4 py-2 text-left text-gray-300 hover:bg-gray-800 hover:text-white transition flex items-center gap-3">
+                        <i class="fa-solid fa-eye text-blue-500"></i> View CV
+                    </button>
+                    <a href="cv-alindra.pdf" download="CV-Alindra-Setya-Ardana.pdf" class="w-full px-4 py-2 text-left text-gray-300 hover:bg-gray-800 hover:text-white transition flex items-center gap-3">
+                        <i class="fa-solid fa-download text-green-500"></i> Download CV
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
@@ -171,10 +299,10 @@
             <span class="inline-block py-1 px-3 rounded-full bg-blue-500/10 text-blue-400 text-xs font-bold tracking-widest uppercase mb-6 border border-blue-500/20">Available for Freelance</span>
             <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight tracking-tight">
                 Hi, I'm <span class="text-blue-500">Alindra Setya Ardana</span><br>
-                <span class="text-gray-500 text-3xl md:text-5xl">Presales Engineer & Solution Architect</span>
+                <span class="text-gray-500 text-3xl md:text-5xl">Presales Engineer</span>
             </h1>
             <p class="text-lg md:text-xl text-gray-400 mb-10 leading-relaxed max-w-2xl mx-auto">
-                As an experienced <strong class="text-white">Presales Engineer</strong> and <strong class="text-white">Solution Architect</strong>, <strong class="text-white">Alindra</strong> helps businesses bridge complex requirements with efficient technology architecture, n8n automation, and robust infrastructure design.
+                As an experienced <strong class="text-white">Presales Engineer</strong>, <strong class="text-white">Alindra</strong> helps businesses bridge complex requirements with efficient technology architecture, n8n automation, and robust infrastructure design.
             </p>
             <div class="flex flex-col md:flex-row justify-center gap-4">
                 <a href="#vibecode" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold transition flex items-center justify-center">
@@ -190,173 +318,207 @@
     <main class="max-w-6xl mx-auto px-6 py-10">
 
         <section id="vibecode" class="mb-24">
-             <h2 class="text-2xl font-bold mb-10 flex items-center justify-end text-right">
-                Frontend Development Portfolio by Alindra <span class="w-8 h-[2px] bg-blue-500 ml-4"></span>
+             <h2 class="text-3xl font-bold mb-16 flex items-center justify-end text-right">
+                Frontend Development Portfolio by Alindra <span class="w-12 h-[3px] bg-blue-500 ml-6"></span>
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-                <div class="md:col-span-4 bg-[#0f0f0f] border border-white/10 rounded-3xl p-8 bento-card flex flex-col justify-center items-start order-2 md:order-1">
-                     <h3 class="text-xl font-bold text-white mb-4">Why My Frontend Works?</h3>
-                     <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                <div class="md:col-span-4 bg-[#0f0f0f] border border-white/10 rounded-3xl p-10 bento-card flex flex-col justify-center items-start order-2 md:order-1 min-h-[500px]">
+                     <h3 class="text-2xl font-bold text-white mb-6">Why My Frontend Works?</h3>
+                     <p class="text-gray-400 text-base leading-relaxed mb-8">
                          Saya tidak hanya menulis kode, tapi membangun pengalaman. Fokus pada kecepatan, aksesibilitas, dan konversi. Cocok untuk kebutuhan Landing Page bisnis maupun Personal Branding.
                      </p>
-                     <div class="grid grid-cols-3 gap-4 w-full text-center">
-                         <div class="bg-black/40 p-3 rounded-xl border border-white/5">
-                             <i class="fa-brands fa-html5 text-2xl text-orange-500 mb-1"></i>
+                     <div class="grid grid-cols-3 gap-6 w-full text-center">
+                         <div class="bg-black/40 p-4 rounded-xl border border-white/5">
+                             <i class="fa-brands fa-html5 text-3xl text-orange-500 mb-2"></i>
                              <p class="text-xs text-gray-500 font-bold">HTML5</p>
                          </div>
-                         <div class="bg-black/40 p-3 rounded-xl border border-white/5">
-                             <i class="fa-brands fa-css3-alt text-2xl text-blue-500 mb-1"></i>
+                         <div class="bg-black/40 p-4 rounded-xl border border-white/5">
+                             <i class="fa-brands fa-css3-alt text-3xl text-blue-500 mb-2"></i>
                              <p class="text-xs text-gray-500 font-bold">Tailwind</p>
                          </div>
-                         <div class="bg-black/40 p-3 rounded-xl border border-white/5">
-                             <i class="fa-brands fa-js text-2xl text-yellow-400 mb-1"></i>
+                         <div class="bg-black/40 p-4 rounded-xl border border-white/5">
+                             <i class="fa-brands fa-js text-3xl text-yellow-400 mb-2"></i>
                              <p class="text-xs text-gray-500 font-bold">JS</p>
                          </div>
                      </div>
                 </div>
 
-                <div class="md:col-span-8 bg-[#111] border border-white/10 rounded-3xl p-8 bento-card relative overflow-hidden group order-1 md:order-2">
+                <div class="md:col-span-8 bg-[#111] border border-white/10 rounded-3xl p-10 bento-card relative overflow-hidden group order-1 md:order-2 min-h-[500px]">
                     <div class="absolute inset-0 code-bg"></div>
-                    <div class="relative z-10">
-                        <i class="fa-solid fa-code text-4xl text-blue-500 mb-6"></i>
-                        <h3 class="text-3xl font-bold text-white mb-2">Landing Page Portfolio</h3>
-                        <p class="text-gray-400 mb-8 max-w-sm">Kumpulan hasil eksplorasi frontend, slicing design, dan interaktif web yang modern dan responsif.</p>
+                    <div class="relative z-10 h-full flex flex-col">
+                        <i class="fa-solid fa-code text-5xl text-blue-500 mb-8"></i>
+                        <h3 class="text-4xl font-bold text-white mb-4">Landing Page Portfolio</h3>
+                        <p class="text-gray-400 mb-10 max-w-lg text-lg">Kumpulan hasil eksplorasi frontend, slicing design, dan interaktif web yang modern dan responsif.</p>
                         
-                        <div class="flex flex-col gap-3">
-                            <div class="flex items-center text-sm text-gray-300 bg-white/5 p-3 rounded-lg border border-white/5">
-                                <span class="text-blue-400 font-mono mr-3">&lt;/&gt;</span> Clean & Semantic Code
+                        <div class="flex flex-col gap-4 mb-auto">
+                            <div class="flex items-center text-base text-gray-300 bg-white/5 p-4 rounded-lg border border-white/5">
+                                <span class="text-blue-400 font-mono mr-4 text-lg">&lt;/&gt;</span> Clean & Semantic Code
                             </div>
-                            <div class="flex items-center text-sm text-gray-300 bg-white/5 p-3 rounded-lg border border-white/5">
-                                <span class="text-purple-400 font-mono mr-3">{}</span> Modern Tech Stack
+                            <div class="flex items-center text-base text-gray-300 bg-white/5 p-4 rounded-lg border border-white/5">
+                                <span class="text-purple-400 font-mono mr-4 text-lg">{}</span> Modern Tech Stack
                             </div>
                         </div>
 
-                        <a href="https://alinktech.my.id" target="_blank" rel="noopener noreferrer" class="mt-8 inline-flex items-center justify-center w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl font-bold transition group-hover:scale-[1.02]">
-                            Visit Work Sample <i class="fa-solid fa-external-link ml-2"></i>
+                        <a href="https://alinktech.my.id" target="_blank" rel="noopener noreferrer" class="mt-10 inline-flex items-center justify-center w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-xl font-bold transition group-hover:scale-[1.02] text-lg">
+                            Visit Work Sample <i class="fa-solid fa-external-link ml-3"></i>
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         
         <section id="solutions" class="mb-24">
-            <h2 class="text-2xl font-bold mb-10 flex items-center">
-                <span class="w-8 h-[2px] bg-blue-500 mr-4"></span> Business Solutions by Alindra Setya Ardana
+            <h2 class="text-3xl font-bold mb-16 flex items-center">
+                <span class="w-12 h-[3px] bg-blue-500 mr-6"></span> Business Solutions by Alindra Setya Ardana
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-                <div class="md:col-span-8 bg-[#111] border border-white/10 rounded-3xl overflow-hidden bento-card relative group">
-                    <div class="relative h-[400px] md:h-[450px]">
-                        <div class="absolute top-0 left-0 w-full p-8 z-20 image-overlay flex flex-col justify-between h-full pointer-events-none">
-                             <div class="flex justify-between items-start pointer-events-auto">
-                                <div>
-                                    <h3 class="text-3xl font-bold text-white mb-2 drop-shadow-lg">Semata Tailor</h3>
-                                    <p class="text-gray-200 max-w-md drop-shadow-md font-medium">Modernisasi bisnis UMKM konvensional dengan sistem pelacakan pesanan real-time.</p>
-                                </div>
-                                <div class="flex space-x-3 bg-black/30 p-2 rounded-full backdrop-blur-md border border-white/10">
-                                    <button onclick="openPDF('semata-tailor-deck.pdf', 'Semata Tailor - Deck')" title="View Deck" class="text-white hover:text-blue-400 transition"><i class="fa-solid fa-file-pdf text-2xl"></i></button>
-                                </div>
+            <div class="bg-[#111] border border-white/10 rounded-3xl overflow-hidden bento-card relative group min-h-[600px]">
+                <div class="relative h-[450px] md:h-[500px]">
+                    <div class="absolute top-0 left-0 w-full p-10 z-20 image-overlay flex flex-col justify-between h-full pointer-events-none">
+                         <div class="flex justify-between items-start pointer-events-auto">
+                            <div>
+                                <h3 class="text-4xl font-bold text-white mb-4 drop-shadow-lg">Semata Tailor</h3>
+                                <p class="text-gray-200 max-w-lg drop-shadow-md font-medium text-lg leading-relaxed">Modernisasi bisnis UMKM konvensional dengan sistem pelacakan pesanan real-time menggunakan teknologi AI dan automation.</p>
+                            </div>
+                            <div class="flex space-x-4 bg-black/30 p-3 rounded-full backdrop-blur-md border border-white/10">
+                                <button onclick="openPDF('semata-tailor-deck.pdf', 'Semata Tailor - Deck')" title="View Deck" class="text-white hover:text-blue-400 transition"><i class="fa-solid fa-eye text-xl"></i></button>
+                                <a href="semata-tailor-deck.pdf" download="Semata-Tailor-Deck.pdf" title="Download Deck" class="text-white hover:text-green-400 transition"><i class="fa-solid fa-download text-xl"></i></a>
                             </div>
                         </div>
-                        <img src="sematatailor-dashboard.png" alt="Semata Tailor Dashboard - Business Solution by Alindra Setya Ardana" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" loading="lazy">
                     </div>
-                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 p-8 bg-[#111] relative z-30 border-t border-white/10">
-                        <div class="bg-white/5 p-4 rounded-2xl border border-white/5">
-                            <span class="text-xs text-blue-400 block mb-1 uppercase tracking-tighter font-bold">Feature</span>
-                            <p class="text-sm font-bold">Real-time Tracking</p>
-                        </div>
-                        <div class="bg-white/5 p-4 rounded-2xl border border-white/5">
-                            <span class="text-xs text-blue-400 block mb-1 uppercase tracking-tighter font-bold">Core</span>
-                            <p class="text-sm font-bold">Deepseek AI Agent</p>
-                        </div>
-                        <div class="bg-white/5 p-4 rounded-2xl border border-white/5 hidden md:block">
-                            <span class="text-xs text-blue-400 block mb-1 uppercase tracking-tighter font-bold">Impact</span>
-                            <p class="text-sm font-bold">Zero Paper Waste</p>
-                        </div>
-                    </div>
+                    <img src="sematatailor-dashboard.png" alt="Semata Tailor Dashboard - Business Solution by Alindra Setya Ardana" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" loading="lazy">
                 </div>
-                
-                <div class="md:col-span-4 bg-gradient-to-br from-blue-900/20 to-blue-600/10 border border-blue-500/20 rounded-3xl p-8 flex flex-col justify-between bento-card">
-                    <div>
-                        <h3 class="text-xl font-bold text-white mb-4 italic leading-tight">"I build what your business needs to scale."</h3>
-                        <div class="space-y-4 mt-6">
-                            <div class="flex items-start">
-                                <i class="fa-solid fa-check text-blue-500 mt-1 mr-3"></i>
-                                <p class="text-sm text-gray-300"><b>Solution Pre-sales:</b> Perancangan proposal teknis dan BoM.</p>
-                            </div>
-                            <div class="flex items-start">
-                                <i class="fa-solid fa-check text-blue-500 mt-1 mr-3"></i>
-                                <p class="text-sm text-gray-300"><b>MVP Development:</b> Membangun prototype aplikasi bisnis cepat.</p>
-                            </div>
-                            <div class="flex items-start">
-                                <i class="fa-solid fa-check text-blue-500 mt-1 mr-3"></i>
-                                <p class="text-sm text-gray-300"><b>Workflow Design:</b> Optimasi proses bisnis via n8n.</p>
-                            </div>
-                        </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6 p-10 bg-[#111] relative z-30 border-t border-white/10">
+                    <div class="bg-white/5 p-6 rounded-2xl border border-white/5">
+                        <span class="text-sm text-blue-400 block mb-2 uppercase tracking-wider font-bold">Feature</span>
+                        <p class="text-base font-bold">Real-time Tracking</p>
                     </div>
-                    <a href="mailto:asetyaardana@gmail.com" class="w-full bg-white text-black py-4 rounded-xl font-bold mt-8 text-center hover:bg-blue-500 hover:text-white transition cursor-pointer">Email Me Now</a>
+                    <div class="bg-white/5 p-6 rounded-2xl border border-white/5">
+                        <span class="text-sm text-blue-400 block mb-2 uppercase tracking-wider font-bold">Core</span>
+                        <p class="text-base font-bold">Deepseek AI Agent</p>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-2xl border border-white/5 hidden md:block">
+                        <span class="text-sm text-blue-400 block mb-2 uppercase tracking-wider font-bold">Impact</span>
+                        <p class="text-base font-bold">Zero Paper Waste</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="automation" class="mb-24">
-            <h2 class="text-2xl font-bold mb-10 flex items-center justify-end text-right">
-                Automation Solutions by Alindra Setya Ardana <span class="w-8 h-[2px] bg-blue-500 ml-4"></span>
+        <section id="automation" class="mb-24">
+            <h2 class="text-3xl font-bold mb-16 flex items-center justify-end text-right">
+                Automation Solutions by Alindra Setya Ardana <span class="w-12 h-[3px] bg-blue-500 ml-6"></span>
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-                <div class="md:col-span-5 bg-[#111] border border-white/10 rounded-3xl p-8 bento-card flex flex-col justify-between">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 min-h-[500px]">
+                <div class="md:col-span-5 bg-[#111] border border-white/10 rounded-3xl p-10 bento-card flex flex-col justify-between min-h-[500px]">
                     <div>
-                        <div class="flex justify-between items-center mb-6">
-                            <h3 class="text-2xl font-bold text-white">AI-LIN Assistant</h3>
-                            <button onclick="openPDF('ai-lin-assistant-deck.pdf', 'AI-LIN Assistant - Deck')" title="View AI-LIN Deck" class="text-blue-500 hover:text-white transition"><i class="fa-solid fa-file-pdf text-2xl"></i></button>
+                        <div class="flex justify-between items-center mb-8">
+                            <h3 class="text-3xl font-bold text-white">AI-LIN Assistant</h3>
+                            <div class="flex space-x-3">
+                                <button onclick="openPDF('ai-lin-assistant-deck.pdf', 'AI-LIN Assistant - Deck')" title="View AI-LIN Deck" class="text-blue-500 hover:text-white transition"><i class="fa-solid fa-eye text-2xl"></i></button>
+                                <a href="ai-lin-assistant-deck.pdf" download="AI-LIN-Assistant-Deck.pdf" title="Download AI-LIN Deck" class="text-blue-500 hover:text-green-400 transition"><i class="fa-solid fa-download text-2xl"></i></a>
+                            </div>
                         </div>
-                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
-                            Advanced Telegram-based AI assistant developed by Solution Architect Alindra, orchestrating specialized AI agents (ASAMI, YUKO, REIKO) for seamless life management and business automation.
+                        <p class="text-gray-400 text-base mb-8 leading-relaxed">
+                            Advanced Telegram-based AI assistant developed by Presales Engineer Alindra, orchestrating specialized AI agents (ASAMI, YUKO, REIKO) for seamless life management and business automation.
                         </p>
-                        <div class="space-y-3">
-                            <div class="flex items-center text-sm text-gray-300"><i class="fa-solid fa-bolt text-blue-500 mr-3"></i> Voice-to-Structured Data</div>
-                            <div class="flex items-center text-sm text-gray-300"><i class="fa-solid fa-bolt text-blue-500 mr-3"></i> Multi-LLM Routing</div>
-                            <div class="flex items-center text-sm text-gray-300"><i class="fa-solid fa-bolt text-blue-500 mr-3"></i> Auto-Sync to Notion/Sheet</div>
+                        <div class="space-y-4">
+                            <div class="flex items-center text-base text-gray-300"><i class="fa-solid fa-bolt text-blue-500 mr-4 text-lg"></i> Voice-to-Structured Data</div>
+                            <div class="flex items-center text-base text-gray-300"><i class="fa-solid fa-bolt text-blue-500 mr-4 text-lg"></i> Multi-LLM Routing</div>
+                            <div class="flex items-center text-base text-gray-300"><i class="fa-solid fa-bolt text-blue-500 mr-4 text-lg"></i> Auto-Sync to Notion/Sheet</div>
                         </div>
                     </div>
-                    <div class="mt-8 pt-6 border-t border-white/5">
-                        <p class="text-xs text-gray-500 uppercase font-bold tracking-widest">Core Tech</p>
-                        <p class="text-sm font-mono mt-2 text-blue-400 text-xs">N8N + Telegram API + Google Sheet + Tavily + Deepseek</p>
+                    <div class="mt-10 pt-8 border-t border-white/5">
+                        <p class="text-sm text-gray-500 uppercase font-bold tracking-widest mb-3">Core Tech</p>
+                        <p class="text-base font-mono text-blue-400">N8N + Telegram API + Google Sheet + Tavily + Deepseek</p>
                     </div>
                 </div>
-                <div class="md:col-span-7 bg-[#111] border border-white/10 rounded-3xl overflow-hidden bento-card relative group">
+                <div class="md:col-span-7 bg-[#111] border border-white/10 rounded-3xl overflow-hidden bento-card relative group min-h-[500px]">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10 pointer-events-none"></div>
-                    <img src="personalassistant-master.png" alt="n8n Workflow" class="w-full h-full object-cover p-4 transition-transform duration-700 group-hover:scale-105">
-                    <div class="absolute bottom-6 left-6 z-20">
-                        <span class="px-3 py-1 bg-blue-600 rounded-full text-xs font-bold uppercase tracking-widest">n8n Orchestration Map</span>
+                    <img src="personalassistant-master.png" alt="n8n Workflow - AI Assistant Automation by Alindra" class="w-full h-full object-cover p-6 transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute bottom-8 left-8 z-20">
+                        <span class="px-4 py-2 bg-blue-600 rounded-full text-sm font-bold uppercase tracking-widest">n8n Orchestration Map</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="network" class="mb-20">
-            <h2 class="text-2xl font-bold mb-10 flex items-center">
-                <span class="w-8 h-[2px] bg-blue-500 mr-4"></span> Infrastructure Solutions by Alindra
+        <section id="network" class="mb-24">
+            <h2 class="text-3xl font-bold mb-16 flex items-center">
+                <span class="w-12 h-[3px] bg-blue-500 mr-6"></span> Infrastructure Solutions by Alindra
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-[#111] border border-white/10 rounded-3xl p-8 bento-card group">
-                    <i class="fa-solid fa-wifi text-4xl text-blue-500 mb-6 group-hover:scale-110 transition"></i>
-                    <h3 class="text-xl font-bold mb-2 text-white">Wireless & Network Design</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Penyusunan High-Level Design (HLD), Heatmap survey, dan Bill of Materials (BoM) untuk kebutuhan jaringan skala menengah hingga enterprise.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-[#111] border border-white/10 rounded-3xl p-10 bento-card group min-h-[300px] flex flex-col">
+                    <i class="fa-solid fa-wifi text-5xl text-blue-500 mb-8 group-hover:scale-110 transition"></i>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Wireless & Network Design</h3>
+                    <p class="text-gray-400 text-base leading-relaxed flex-1">Penyusunan High-Level Design (HLD), Heatmap survey, dan Bill of Materials (BoM) untuk kebutuhan jaringan skala menengah hingga enterprise dengan fokus pada performance dan security.</p>
                 </div>
-                <div class="bg-[#111] border border-white/10 rounded-3xl p-8 bento-card group">
-                    <i class="fa-solid fa-shield-halved text-4xl text-blue-500 mb-6 group-hover:scale-110 transition"></i>
-                    <h3 class="text-xl font-bold mb-2 text-white">Technical Sales Collateral</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Membantu mengemas solusi teknis menjadi paket presentasi yang persuasif dan mudah dipahami oleh pengambil keputusan bisnis.</p>
+                <div class="bg-[#111] border border-white/10 rounded-3xl p-10 bento-card group min-h-[300px] flex flex-col">
+                    <i class="fa-solid fa-shield-halved text-5xl text-blue-500 mb-8 group-hover:scale-110 transition"></i>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Technical Sales Collateral</h3>
+                    <p class="text-gray-400 text-base leading-relaxed flex-1">Membantu mengemas solusi teknis menjadi paket presentasi yang persuasif dan mudah dipahami oleh pengambil keputusan bisnis. Dari proposal teknis hingga BoM yang detail.</p>
                 </div>
             </div>
         </section>
 
-    </main>
+        <section id="services" class="mb-24">
+            <h2 class="text-4xl font-bold mb-20 text-center">
+                <span class="text-blue-500">Alindra</span> Services
+            </h2>
+            <div class="max-w-5xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+                    <div class="bg-[#111] border border-white/10 rounded-3xl p-10 bento-card group hover:border-blue-500/30 transition-all min-h-[250px] flex flex-col">
+                        <div class="flex items-center mb-6">
+                            <i class="fa-solid fa-globe text-4xl text-blue-500 mr-5 group-hover:scale-110 transition"></i>
+                            <h3 class="text-2xl font-bold text-white">Website</h3>
+                        </div>
+                        <p class="text-gray-400 text-base leading-relaxed flex-1">Landing page, corporate website, dan e-commerce yang modern dan responsif dengan fokus pada konversi dan user experience yang optimal.</p>
+                    </div>
+                    <div class="bg-[#111] border border-white/10 rounded-3xl p-10 bento-card group hover:border-blue-500/30 transition-all min-h-[250px] flex flex-col">
+                        <div class="flex items-center mb-6">
+                            <i class="fa-solid fa-server text-4xl text-blue-500 mr-5 group-hover:scale-110 transition"></i>
+                            <h3 class="text-2xl font-bold text-white">System</h3>
+                        </div>
+                        <p class="text-gray-400 text-base leading-relaxed flex-1">Sistem informasi, dashboard analytics, dan aplikasi bisnis custom yang terintegrasi dengan automation dan AI untuk efisiensi maksimal.</p>
+                    </div>
+                    <div class="bg-[#111] border border-white/10 rounded-3xl p-10 bento-card group hover:border-blue-500/30 transition-all min-h-[250px] flex flex-col">
+                        <div class="flex items-center mb-6">
+                            <i class="fa-solid fa-robot text-4xl text-blue-500 mr-5 group-hover:scale-110 transition"></i>
+                            <h3 class="text-2xl font-bold text-white">Automation</h3>
+                        </div>
+                        <p class="text-gray-400 text-base leading-relaxed flex-1">Workflow automation dengan n8n, integrasi sistem, dan optimasi proses bisnis untuk meningkatkan produktivitas dan mengurangi human error.</p>
+                    </div>
+                    <div class="bg-[#111] border border-white/10 rounded-3xl p-10 bento-card group hover:border-blue-500/30 transition-all min-h-[250px] flex flex-col">
+                        <div class="flex items-center mb-6">
+                            <i class="fa-solid fa-brain text-4xl text-blue-500 mr-5 group-hover:scale-110 transition"></i>
+                            <h3 class="text-2xl font-bold text-white">Agentic AI</h3>
+                        </div>
+                        <p class="text-gray-400 text-base leading-relaxed flex-1">AI assistant, chatbot intelligent, dan solusi AI untuk otomasi tugas kompleks dengan kemampuan reasoning dan decision making.</p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-blue-900/20 to-blue-600/10 border border-blue-500/20 rounded-3xl p-12 text-center min-h-[300px] flex flex-col justify-center">
+                    <div class="flex items-center justify-center mb-8">
+                        <i class="fa-solid fa-shield-halved text-5xl text-blue-500 mr-6"></i>
+                        <h3 class="text-3xl font-bold text-white">Network & Security Solution</h3>
+                    </div>
+                    <p class="text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed text-lg">
+                        Desain jaringan wireless, security assessment, dan infrastruktur IT yang robust untuk kebutuhan enterprise dengan standar keamanan tinggi dan performa optimal.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                        <a href="mailto:asetyaardana@gmail.com" class="bg-white text-black px-10 py-5 rounded-xl font-bold hover:bg-blue-500 hover:text-white transition flex items-center justify-center gap-4 text-lg">
+                            <i class="fa-solid fa-envelope"></i> Email Me
+                        </a>
+                        <a href="https://wa.me/6281393657195" target="_blank" rel="noopener noreferrer" class="border border-green-500/50 text-green-400 hover:bg-green-500/10 px-10 py-5 rounded-xl font-bold transition flex items-center justify-center gap-4 text-lg">
+                            <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     <footer class="border-t border-white/10 py-12 px-6">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="text-center md:text-left">
-                <p class="text-gray-500 text-sm">&copy; 2025 <strong class="text-gray-400">Alindra Setya Ardana</strong> - Presales Engineer & Solution Architect.</p>
+                <p class="text-gray-500 text-sm">&copy; 2025 <strong class="text-gray-400">Alindra Setya Ardana</strong> - Presales Engineer.</p>
                 <p class="text-gray-600 text-xs mt-1">Specializing in Business Transformation, Automation Solutions & Infrastructure Design</p>
             </div>
             <div class="flex space-x-8">
@@ -371,8 +533,8 @@
     <div id="pdf-modal" class="pdf-modal">
         <div class="pdf-viewer">
             <div class="pdf-toolbar">
-                <div class="flex items-center gap-4">
-                    <h3 id="pdf-title" class="font-bold">PDF Viewer</h3>
+                <h3 id="pdf-title" class="font-bold">PDF Viewer</h3>
+                <div class="pdf-controls">
                     <div class="flex items-center gap-2 text-sm">
                         <button id="prev-page" class="px-3 py-1 bg-gray-600 hover:bg-gray-500 rounded text-white">
                             <i class="fa-solid fa-chevron-left"></i>
@@ -391,10 +553,10 @@
                             <i class="fa-solid fa-plus"></i>
                         </button>
                     </div>
+                    <button id="close-pdf" class="text-white hover:text-red-400 text-xl">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
                 </div>
-                <button id="close-pdf" class="text-white hover:text-red-400 text-xl">
-                    <i class="fa-solid fa-times"></i>
-                </button>
             </div>
             <div class="pdf-canvas-container">
                 <canvas id="pdf-canvas"></canvas>
@@ -405,21 +567,40 @@
     <script>
         let pdfDoc = null;
         let pageNum = 1;
-        let scale = 1.5;
+        let scale = 1.2;
         const canvas = document.getElementById('pdf-canvas');
         const ctx = canvas.getContext('2d');
 
         // PDF.js worker
         pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
+        // Touch gesture variables
+        let touchStartX = 0;
+        let touchStartY = 0;
+        let isZooming = false;
+        let initialDistance = 0;
+        let initialScale = 1.2;
+
         function openPDF(filename, title) {
             document.getElementById('pdf-modal').style.display = 'block';
             document.getElementById('pdf-title').textContent = title;
+            
+            // Adjust initial scale for mobile
+            if (window.innerWidth <= 768) {
+                scale = 0.8;
+                initialScale = 0.8;
+            } else {
+                scale = 1.2;
+                initialScale = 1.2;
+            }
+            
             loadPDF(filename);
+            document.body.style.overflow = 'hidden'; // Prevent background scroll
         }
 
         function closePDF() {
             document.getElementById('pdf-modal').style.display = 'none';
+            document.body.style.overflow = ''; // Restore scrolling
         }
 
         function loadPDF(filename) {
@@ -435,22 +616,103 @@
         }
 
         function renderPage(num) {
+            if (!pdfDoc) return;
+            
             pdfDoc.getPage(num).then(function(page) {
                 const viewport = page.getViewport({ scale: scale });
-                canvas.height = viewport.height;
-                canvas.width = viewport.width;
-
-                const renderContext = {
-                    canvasContext: ctx,
-                    viewport: viewport
-                };
-                page.render(renderContext);
+                
+                // Adjust canvas size for mobile
+                const containerWidth = document.querySelector('.pdf-canvas-container').clientWidth - 20;
+                const maxWidth = Math.min(viewport.width, containerWidth);
+                
+                if (viewport.width > maxWidth) {
+                    const adjustedScale = (maxWidth / viewport.width) * scale;
+                    const adjustedViewport = page.getViewport({ scale: adjustedScale });
+                    canvas.height = adjustedViewport.height;
+                    canvas.width = adjustedViewport.width;
+                    
+                    const renderContext = {
+                        canvasContext: ctx,
+                        viewport: adjustedViewport
+                    };
+                    page.render(renderContext);
+                } else {
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
+                    
+                    const renderContext = {
+                        canvasContext: ctx,
+                        viewport: viewport
+                    };
+                    page.render(renderContext);
+                }
             });
         }
 
         function updatePageInfo() {
+            if (!pdfDoc) return;
             document.getElementById('page-info').textContent = `${pageNum} / ${pdfDoc.numPages}`;
             document.getElementById('zoom-level').textContent = `${Math.round(scale * 100)}%`;
+        }
+
+        // Touch event handlers for mobile gestures
+        function handleTouchStart(e) {
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
+            
+            if (e.touches.length === 2) {
+                isZooming = true;
+                initialDistance = getDistance(e.touches[0], e.touches[1]);
+                initialScale = scale;
+                e.preventDefault();
+            }
+        }
+
+        function handleTouchMove(e) {
+            if (isZooming && e.touches.length === 2) {
+                const currentDistance = getDistance(e.touches[0], e.touches[1]);
+                const scaleChange = currentDistance / initialDistance;
+                scale = Math.max(0.5, Math.min(3, initialScale * scaleChange));
+                renderPage(pageNum);
+                updatePageInfo();
+                e.preventDefault();
+            }
+        }
+
+        function handleTouchEnd(e) {
+            if (isZooming) {
+                isZooming = false;
+                return;
+            }
+            
+            if (e.changedTouches.length === 1) {
+                const touchEndX = e.changedTouches[0].clientX;
+                const touchEndY = e.changedTouches[0].clientY;
+                const deltaX = touchEndX - touchStartX;
+                const deltaY = touchEndY - touchStartY;
+                
+                // Swipe gestures for page navigation
+                if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 50) {
+                    if (deltaX > 0 && pageNum > 1) {
+                        // Swipe right - previous page
+                        pageNum--;
+                        renderPage(pageNum);
+                        updatePageInfo();
+                    } else if (deltaX < 0 && pageNum < pdfDoc.numPages) {
+                        // Swipe left - next page
+                        pageNum++;
+                        renderPage(pageNum);
+                        updatePageInfo();
+                    }
+                }
+            }
+        }
+
+        function getDistance(touch1, touch2) {
+            return Math.sqrt(
+                Math.pow(touch2.clientX - touch1.clientX, 2) +
+                Math.pow(touch2.clientY - touch1.clientY, 2)
+            );
         }
 
         // Event listeners
@@ -458,6 +720,11 @@
         document.getElementById('pdf-modal').addEventListener('click', function(e) {
             if (e.target === this) closePDF();
         });
+
+        // Touch event listeners for mobile
+        canvas.addEventListener('touchstart', handleTouchStart, { passive: false });
+        canvas.addEventListener('touchmove', handleTouchMove, { passive: false });
+        canvas.addEventListener('touchend', handleTouchEnd, { passive: false });
 
         document.getElementById('prev-page').addEventListener('click', function() {
             if (pageNum <= 1) return;
@@ -467,21 +734,20 @@
         });
 
         document.getElementById('next-page').addEventListener('click', function() {
-            if (pageNum >= pdfDoc.numPages) return;
+            if (!pdfDoc || pageNum >= pdfDoc.numPages) return;
             pageNum++;
             renderPage(pageNum);
             updatePageInfo();
         });
 
         document.getElementById('zoom-in').addEventListener('click', function() {
-            scale += 0.25;
+            scale = Math.min(3, scale + 0.25);
             renderPage(pageNum);
             updatePageInfo();
         });
 
         document.getElementById('zoom-out').addEventListener('click', function() {
-            if (scale <= 0.5) return;
-            scale -= 0.25;
+            scale = Math.max(0.5, scale - 0.25);
             renderPage(pageNum);
             updatePageInfo();
         });
@@ -495,11 +761,20 @@
                     renderPage(pageNum);
                     updatePageInfo();
                 }
-                if (e.key === 'ArrowRight' && pageNum < pdfDoc.numPages) {
+                if (e.key === 'ArrowRight' && pdfDoc && pageNum < pdfDoc.numPages) {
                     pageNum++;
                     renderPage(pageNum);
                     updatePageInfo();
                 }
+            }
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            if (pdfDoc && document.getElementById('pdf-modal').style.display === 'block') {
+                setTimeout(() => {
+                    renderPage(pageNum);
+                }, 100);
             }
         });
     </script>

@@ -31,23 +31,26 @@ No framework, build system, backend, database, or runtime dependency is required
 
 ```text
 /
-├── index.html
-├── CNAME
-├── robots.txt
-├── sitemap.xml
-├── README.md
-├── favicon.svg
-├── assets/
-│   ├── css/
-│   │   └── styles.css
-│   ├── js/
-│   │   └── main.js
-│   └── images/
-│       ├── og-cover.png
-│       ├── personalassistant-master.png
-│       └── sematatailor-dashboard.png
-├── ai-lin-assistant-deck.pdf
-└── semata-tailor-deck.pdf
++-- index.html
++-- CNAME
++-- robots.txt
++-- sitemap.xml
++-- README.md
++-- favicon.svg
++-- assets/
+    +-- css/
+    |   +-- styles.css
+    +-- js/
+    |   +-- main.js
+    +-- images/
+        +-- alindra-semi-formal.png
+        +-- og-cover.png
+        +-- work-automation-finance.png
+        +-- work-laut-jaya.png
+        +-- work-network-hospital.png
+        +-- work-paralife-ai.png
+        +-- work-rfid-linen-visibility.png
+        +-- work-rfid-warehouse.png
 ```
 
 ## Local Preview

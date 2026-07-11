@@ -364,6 +364,22 @@ h3 {
   gap: 1rem;
 }
 
+.work-group {
+  display: grid;
+  gap: 1rem;
+}
+
+.work-group + .work-group {
+  margin-top: 2rem;
+}
+
+.work-group > h3 {
+  margin-bottom: 0;
+  color: var(--accent-strong);
+  font-size: .95rem;
+  text-transform: uppercase;
+}
+
 .work-card {
   padding: 1.25rem;
 }
@@ -381,6 +397,32 @@ h3 {
   object-fit: cover;
   border: 1px solid var(--border);
   border-radius: var(--radius);
+}
+
+.compact-work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.compact-work-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: rgba(22, 33, 45, .68);
+  padding: 1rem;
+}
+
+.compact-work-card p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.compact-work-card .work-meta {
+  margin-bottom: .8rem;
+}
+
+.compact-work-card .tech {
+  margin-top: .75rem;
 }
 
 .work-meta {
@@ -516,7 +558,8 @@ h3 {
 
   .card-grid,
   .card-grid.five,
-  .process-list {
+  .process-list,
+  .compact-work-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -552,7 +595,8 @@ h3 {
 
   .card-grid,
   .card-grid.five,
-  .process-list {
+  .process-list,
+  .compact-work-grid {
     grid-template-columns: 1fr;
   }
 

@@ -1,41 +1,109 @@
-# 🎨 Al-Portfolio: Vibe Coding Showcase
+# Alindra Setya Ardana - Personal Professional Website
 
-**Modern, Fast, and Aesthetic Portfolio Architecture**
+Static personal website for Alindra Setya Ardana, a Presales Engineer and Technology Builder.
 
-Repository ini berisi hasil eksplorasi *Vibe Coding*—sebuah pendekatan pembangunan antarmuka (UI) yang mengutamakan kecepatan eksekusi tanpa mengorbankan kualitas visual dan struktur kode. Proyek ini berfungsi sebagai sentral informasi keahlian saya di bidang *Solution Architect* dan *Web Development*.
+The website presents:
+- professional identity;
+- Presales experience;
+- technology domains;
+- selected work and experiments;
+- personal notes;
+- connection to Alink Tech.
 
----
+## Purpose
 
-## ✨ Key Features
-- **Modern Bento Grid Layout**: Desain modular yang responsif dan sangat tren untuk portofolio profesional.
-- **Micro-Interactions**: Animasi *hover* dan *scroll-smooth* yang meningkatkan pengalaman pengguna.
-- **Glassmorphism Aesthetic**: Menggunakan efek *backdrop-blur* dan gradien untuk tampilan yang elegan dan futuristik.
-- **Optimized for Conversion**: Penempatan CTA (Call to Action) yang strategis untuk WhatsApp dan dokumentasi PDF.
+This repository powers the personal professional website at `https://www.alindra.my.id/`. The site is designed to introduce Alindra's Presales Engineering work, document selected projects and experiments, and provide clear paths for professional contact.
 
-## 🛠 Tech Stack
-- **Frontend**: HTML5 & JavaScript.
-- **Styling**: **Tailwind CSS** (via CDN for rapid prototyping).
-- **Icons**: FontAwesome 6.
-- **Design Philosophy**: High-fidelity slicing with a focus on dark mode aesthetics.
+Alink Tech is referenced as a separate independent commercial initiative, not as the primary identity of this website.
 
-## ⚡ The "Vibe Coding" Concept
-Proyek ini dibangun dengan mindset **"AI-First Development"**, di mana fokus utama terletak pada:
-1. **Rapid Slicing**: Mengubah konsep visual menjadi kode fungsional dalam hitungan menit.
-2. **Modular Components**: Kode yang mudah dipelihara dan diduplikasi untuk kebutuhan landing page lain.
-3. **Responsive Logic**: Memastikan tampilan sempurna di layar mobile maupun desktop secara instan.
+## Architecture
 
----
+The website is intentionally lightweight and static:
+- semantic HTML in `index.html`;
+- local CSS in `assets/css/styles.css`;
+- minimal vanilla JavaScript in `assets/js/main.js`;
+- static images in `assets/images/`;
+- GitHub Pages-compatible paths.
 
-## 🔗 Live Demo
-Lihat hasil akhirnya di sini:  
-👉 **[alindra.alinktech.my.id](https://alindra.alinktech.my.id)**
+No framework, build system, backend, database, or runtime dependency is required.
 
----
+## Directory Structure
 
-## 💼 Work With Me
-Tertarik untuk membuat landing page serupa atau ingin mengintegrasikan workflow bisnis Anda dengan teknologi modern?
+```text
+/
+├── index.html
+├── CNAME
+├── robots.txt
+├── sitemap.xml
+├── README.md
+├── favicon.svg
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   └── main.js
+│   └── images/
+│       ├── og-cover.png
+│       ├── personalassistant-master.png
+│       └── sematatailor-dashboard.png
+├── ai-lin-assistant-deck.pdf
+└── semata-tailor-deck.pdf
+```
 
-[**Chat on WhatsApp**](https://wa.me/6281393657195)
+## Local Preview
 
----
-*Developed by [Alindra](https://alindra.alinktech.my.id) - Architecting Solutions & Automating Growth.*
+Run a simple static server from the repository root:
+
+```bash
+python -m http.server 8000
+```
+
+Open:
+
+```text
+http://127.0.0.1:8000/
+```
+
+## Deployment
+
+The site is suitable for GitHub Pages. The canonical domain is configured through `CNAME`:
+
+```text
+www.alindra.my.id
+```
+
+Do not remove or overwrite `CNAME` unless the production hostname changes.
+
+## SEO Files
+
+The repository includes:
+- `robots.txt` with the canonical sitemap location;
+- `sitemap.xml` containing the canonical homepage URL;
+- Open Graph and Twitter metadata in `index.html`;
+- JSON-LD structured data using `ProfilePage` and `Person`.
+
+## Editing Guidelines
+
+- Keep the site static and GitHub Pages-compatible.
+- Use Indonesian as the primary language.
+- Keep the primary positioning as `Presales Engineer & Technology Builder`.
+- Use first-person writing.
+- Do not add unsupported claims, fake metrics, client names, certifications, or private employer details.
+- Keep Alink Tech concise as a separate independent initiative.
+- Keep external links descriptive and use `rel="noopener noreferrer"` when opening a new tab.
+
+## Privacy
+
+A detailed CV is not publicly hosted from the current website. CV sharing should happen directly by request.
+
+Removing a file from the current branch does not remove it from previous Git commits. Git history cleanup requires a separate owner-approved destructive operation.
+
+## Verification Commands
+
+```bash
+git status --short
+git diff --check
+git diff --stat
+grep -RniE "<removed-public-cv-and-outdated-marketing-terms>" . --exclude-dir=.git
+python -m http.server 8000
+```

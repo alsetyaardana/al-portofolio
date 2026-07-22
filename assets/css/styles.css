@@ -209,8 +209,7 @@ h3 {
 .hero-lead,
 .prose,
 .contact > p,
-.split-band p,
-.alink p {
+.split-band p {
   color: var(--muted);
   font-size: clamp(1rem, 1.35vw, 1.1rem);
 }
@@ -311,21 +310,18 @@ h3 {
 }
 
 .two-column,
-.split-band,
-.alink {
+.split-band {
   display: grid;
   grid-template-columns: .75fr 1.25fr;
   gap: clamp(1.5rem, 4vw, 3rem);
 }
 
-.split-band > div:nth-child(2),
-.alink > div:nth-child(2) {
+.split-band > div:nth-child(2) {
   align-self: start;
   padding-top: 2.35rem;
 }
 
-.split-band .button,
-.alink .button {
+.split-band .button {
   margin-top: .9rem;
 }
 
@@ -490,14 +486,6 @@ h3 {
   padding: clamp(1.25rem, 3vw, 2rem);
 }
 
-.alink {
-  align-items: start;
-}
-
-.alink .button {
-  white-space: nowrap;
-}
-
 .contact {
   align-items: start;
 }
@@ -561,7 +549,6 @@ h3 {
   .hero-grid,
   .two-column,
   .split-band,
-  .alink,
   .work-card.with-image {
     grid-template-columns: 1fr;
   }
@@ -571,8 +558,6 @@ h3 {
   .process-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
-  .alink .button { justify-self: start; }
 
 }
 

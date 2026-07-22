@@ -7,14 +7,11 @@ The website presents:
 - Presales experience;
 - technology domains;
 - selected work and experiments;
-- personal notes;
-- connection to Alink Tech.
+- personal notes.
 
 ## Purpose
 
 This repository powers the personal professional website at `https://www.alindra.my.id/`. The site is designed to introduce Alindra's Presales Engineering work, document selected projects and experiments, and provide clear paths for professional contact.
-
-Alink Tech is referenced as a separate independent commercial initiative, not as the primary identity of this website.
 
 ## Architecture
 
@@ -92,7 +89,6 @@ The repository includes:
 - Keep the primary positioning as `Presales Engineer & Technology Builder`.
 - Use first-person writing.
 - Do not add unsupported claims, fake metrics, client names, certifications, or private employer details.
-- Keep Alink Tech concise as a separate independent initiative.
 - Keep external links descriptive and use `rel="noopener noreferrer"` when opening a new tab.
 
 ## Privacy

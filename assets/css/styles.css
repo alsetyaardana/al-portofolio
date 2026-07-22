@@ -527,26 +527,40 @@ h3 {
 
 .book-list {
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 300px));
   gap: 1.5rem;
 }
 
 .book-card {
-  display: grid;
-  grid-template-columns: minmax(160px, 200px) 1fr;
-  gap: 1.5rem;
-  align-items: start;
-  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
 }
 
-.book-card p {
+.book-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: .5rem;
+  padding: 1.25rem;
+}
+
+.book-card-body p {
   color: var(--muted);
+  flex: 1;
+}
+
+.book-card-body .hero-actions {
+  margin-top: .25rem;
 }
 
 .book-cover {
+  display: block;
   width: 100%;
   aspect-ratio: 3 / 4;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border: 0;
+  border-bottom: 1px solid var(--border);
   object-fit: cover;
 }
 
@@ -574,13 +588,8 @@ h3 {
   .hero-grid,
   .two-column,
   .split-band,
-  .work-card.with-image,
-  .book-card {
+  .work-card.with-image {
     grid-template-columns: 1fr;
-  }
-
-  .book-cover {
-    max-width: 240px;
   }
 
   .card-grid,

@@ -349,8 +349,7 @@ h3 {
 }
 
 .card p,
-.work-card p,
-.process-list p {
+.work-card p {
   color: var(--muted);
   margin-bottom: 0;
 }
@@ -452,33 +451,6 @@ h3 {
 .tech {
   color: var(--accent);
   font-size: .92rem;
-}
-
-.process-list {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  counter-reset: process;
-}
-
-.process-list li {
-  counter-increment: process;
-  border-top: 1px solid var(--border);
-  padding-top: 1rem;
-}
-
-.process-list span {
-  display: block;
-  margin-bottom: .45rem;
-  font-weight: 760;
-}
-
-.process-list span::before {
-  content: "0" counter(process) " ";
-  color: var(--accent);
 }
 
 .info-card,
@@ -593,8 +565,7 @@ h3 {
   }
 
   .card-grid,
-  .card-grid.five,
-  .process-list {
+  .card-grid.five {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -627,8 +598,7 @@ h3 {
   }
 
   .card-grid,
-  .card-grid.five,
-  .process-list {
+  .card-grid.five {
     grid-template-columns: 1fr;
   }
 

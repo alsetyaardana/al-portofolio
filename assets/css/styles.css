@@ -525,6 +525,31 @@ h3 {
   text-underline-offset: 4px;
 }
 
+.book-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.book-card {
+  display: grid;
+  grid-template-columns: minmax(160px, 200px) 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  padding: 1.5rem;
+}
+
+.book-card p {
+  color: var(--muted);
+}
+
+.book-cover {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+
 .footer {
   width: min(100% - 2rem, var(--max));
   margin: 0 auto;
@@ -549,8 +574,13 @@ h3 {
   .hero-grid,
   .two-column,
   .split-band,
-  .work-card.with-image {
+  .work-card.with-image,
+  .book-card {
     grid-template-columns: 1fr;
+  }
+
+  .book-cover {
+    max-width: 240px;
   }
 
   .card-grid,

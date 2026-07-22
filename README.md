@@ -7,7 +7,8 @@ The website presents:
 - Presales experience;
 - technology domains;
 - selected work and experiments;
-- personal notes.
+- personal notes;
+- free downloadable books written by Alindra.
 
 ## Purpose
 
@@ -35,20 +36,27 @@ No framework, build system, backend, database, or runtime dependency is required
 +-- README.md
 +-- favicon.svg
 +-- assets/
-    +-- css/
-    |   +-- styles.css
-    +-- js/
-    |   +-- main.js
-    +-- images/
-        +-- alindra-semi-formal.png
-        +-- og-cover.png
-        +-- work-automation-finance.png
-        +-- work-laut-jaya.png
-        +-- work-network-hospital.png
-        +-- work-paralife-ai.png
-        +-- work-rfid-linen-visibility.png
-        +-- work-rfid-warehouse.png
+|   +-- css/
+|   |   +-- styles.css
+|   +-- js/
+|   |   +-- main.js
+|   +-- images/
+|       +-- alindra-semi-formal.png
+|       +-- og-cover.png
+|       +-- work-automation-finance.png
+|       +-- work-laut-jaya.png
+|       +-- work-network-hospital.png
+|       +-- work-paralife-ai.png
+|       +-- work-rfid-linen-visibility.png
+|       +-- work-rfid-warehouse.png
++-- buku/
+    +-- index.html
+    +-- bukan-cuma-berani-tapi-siap/
+        +-- index.html
+        +-- bukan-cuma-berani-tapi-siap.pdf
 ```
+
+Each book gets its own folder under `buku/` with a dedicated `index.html` landing page (for SEO and Book structured data) plus the static PDF file served next to it. `buku/index.html` lists all published books.
 
 ## Local Preview
 
